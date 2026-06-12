@@ -148,6 +148,470 @@
 <a class="text-slate-300 hover:text-white transition-colors" href="productos.html">Productos</a>
 <a class="text-slate-300 hover:text-white transition-colors" href="nosotros.html">Nosotros</a>
 </div>
+<div class="flex items-center gap-3">
+<button onclick="window.location.href='contacto.html'" class="hidden md:inline-block bg-secondary-container hover:bg-orange-600 text-white px-6 py-2 rounded font-bold uppercase text-xs tracking-widest transition-all">
+  Cotizar
+</button>
+<button id="menu-toggle" class="md:hidden flex flex-col justify-center items-center w-10 h-10 gap-1.5" onclick="document.getElementById('mobile-menu').classList.toggle('hidden')" aria-label="Abrir menu">
+  <span class="block w-6 h-0.5 bg-white"></span>
+  <span class="block w-6 h-0.5 bg-white"></span>
+  <span class="block w-6 h-0.5 bg-white"></span>
+</button>
+</div>
+</div>
+</nav>
+<!-- Mobile Menu -->
+<div id="mobile-menu" class="hidden md:hidden bg-slate-900 border-t border-slate-700 w-full z-[59] fixed top-[80px] left-0">
+  <div class="flex flex-col px-6 py-4 gap-1 font-['Inter'] text-sm font-semibold uppercase">
+    <a class="text-orange-500 py-2 border-b border-slate-800" href="index.html">Inicio</a>
+    <a class="text-slate-300 hover:text-white transition-colors py-2 border-b border-slate-800" href="servicios.html">Servicios</a>
+    <a class="text-slate-300 hover:text-white transition-colors py-2 border-b border-slate-800" href="productos.html">Productos</a>
+    <a class="text-slate-300 hover:text-white transition-colors py-2 border-b border-slate-800" href="nosotros.html">Nosotros</a>
+    <button onclick="window.location.href='contacto.html'" class="bg-secondary-container hover:bg-orange-600 text-white px-6 py-3 rounded font-bold uppercase text-xs tracking-widest transition-all mt-3 w-full">
+      Cotizar
+    </button>
+  </div>
+</div>
+
+</header>
+<main class="pt-[160px] md:pt-[120px]">
+<!-- Hero Section -->
+<section id="inicio" class="relative h-[921px] flex items-center overflow-hidden">
+<div class="absolute inset-0 z-0">
+<img class="w-full h-full object-cover" data-alt="Modern industrial facility with engineers in safety vests and helmets discussing blueprints in a large brightly lit factory floor" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAW7SDEs1jCfPyfMtDTD9fP3Zxvos8Pj8S3jUVbGTOG8-4PKMv9eyIZxK_YOTceDrDmy2jzwnFNjPr3MN2QKU6gXSS8fpPx8PTNZ4VET1O-fG1MoPYOFAVfrGXPLhajlZY-SQVPfnI6xwFOshtulkVLTCjQpSSkvDcZDy-U1v5NVC5ht4hIpJDwQfIxSCBMwcKCdAtTkGzS5as-0dEHZyQ8p55WGpAVXZaWW91KCDdjrreTk_lcv-G1gCc8eM1kULzP17k5eh1NlMP6"/>
+<div class="absolute inset-0 bg-slate-950/80"></div>
+</div>
+<div class="relative z-10 max-w-[1280px] mx-auto px-4 md:px-8 w-full">
+<div class="max-w-3xl">
+<span class="inline-block px-4 py-1 bg-secondary-container text-white font-label-md text-label-md rounded-full mb-6">Expertos en Seguridad Industrial</span>
+<h1 class="text-4xl md:text-headline-xl font-headline-xl text-white mb-6 uppercase tracking-tighter">Profesionales en Prevención de Riesgos</h1>
+<p class="font-body-lg text-body-lg text-slate-300 mb-10 max-w-xl italic border-l-4 border-orange-500 pl-6">
+                        "Observe – Piense – Decida"
+                    </p>
+<div class="flex flex-col sm:flex-row gap-4">
+<button onclick="window.location.href='contacto.html'" class="w-full sm:w-auto bg-secondary-container hover:bg-orange-600 text-white px-8 py-4 rounded font-bold uppercase tracking-wider transition-all shadow-lg shadow-orange-900/20">Contáctanos</button>
+<button onclick="window.location.href='servicios.html'" class="w-full sm:w-auto border-2 border-white/20 hover:border-white text-white px-8 py-4 rounded font-bold uppercase tracking-wider transition-all">Nuestros Servicios</button>
+</div>
+</div>
+</div>
+</section>
+<!-- Stats Section -->
+<section class="bg-primary-container py-xl relative overflow-hidden">
+<div class="safety-grid-overlay absolute inset-0"></div>
+<div class="max-w-[1280px] mx-auto px-4 md:px-8 grid grid-cols-2 md:grid-cols-4 gap-gutter relative z-10">
+<div class="text-center md:text-left">
+<div class="font-headline-xl text-tertiary-fixed-dim mb-2">10+</div>
+<div class="font-label-md text-slate-400 uppercase tracking-widest">Años de Experiencia</div>
+</div>
+<div class="text-center md:text-left">
+<div class="font-headline-xl text-tertiary-fixed-dim mb-2">500+</div>
+<div class="font-label-md text-slate-400 uppercase tracking-widest">Clientes Satisfechos</div>
+</div>
+<div class="text-center md:text-left">
+<div class="font-headline-xl text-tertiary-fixed-dim mb-2">1200+</div>
+<div class="font-label-md text-slate-400 uppercase tracking-widest">Proyectos Ejecutados</div>
+</div>
+<div class="text-center md:text-left">
+<div class="font-headline-xl text-tertiary-fixed-dim mb-2">24/7</div>
+<div class="font-label-md text-slate-400 uppercase tracking-widest">Soporte Técnico</div>
+</div>
+</div>
+</section>
+<!-- Video Showcase Section -->
+<section class="py-xl bg-slate-950 dark:bg-black text-white">
+<div class="max-w-[1280px] mx-auto px-4 md:px-8">
+<div class="text-center mb-lg">
+<h2 class="font-headline-lg text-headline-lg uppercase mb-4">Nuestro Trabajo en Terreno</h2>
+<p class="font-body-md text-slate-400 max-w-2xl mx-auto">Conozca de cerca nuestros procesos, la implementación de tecnología y el compromiso de nuestro equipo humano en el día a día.</p>
+</div>
+
+<div class="flex flex-col gap-12">
+  <!-- Video 1 (Row 1) -->
+  <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+    <div class="relative bg-slate-800 rounded-xl overflow-hidden aspect-video shadow-2xl border border-slate-700 group cursor-pointer w-full">
+      <img class="w-full h-full object-cover opacity-60 group-hover:opacity-40 transition-opacity duration-500" data-alt="Industrial working environment video thumbnail" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAwUqA2nC3H09FDE57WdXYb1bBovmU0pT5E5kE5k9G1F8G6xO19f0XvA9V50Q-D4Hq2nC1bY8rU7o4eQ3pXv1r6TqBf11y8gB1sM3QW7D8FwBqA2wF2c5R4mU9jTqR5c8r2G6M9vH4bL8fX1G4wH5bE3sQ8fV7nE4bC3sV8cE2jQ1wT5gB9yN8kV7bL0dZ6pX2cV4bE3vN7gZ9oK1rL4qZ0wM5c" />
+      <div class="absolute inset-0 flex items-center justify-center">
+        <div class="w-16 h-16 bg-secondary-container hover:bg-orange-500 text-white rounded-full flex items-center justify-center transition-transform transform group-hover:scale-110 shadow-[0_0_30px_rgba(252,119,40,0.5)]">
+          <span class="material-symbols-outlined text-3xl" data-icon="play_arrow">play_arrow</span>
+        </div>
+      </div>
+      <div class="absolute bottom-4 left-4 right-4">
+        <p class="font-label-md text-xs uppercase tracking-widest text-slate-300 mb-1">Próximamente</p>
+        <h3 class="font-headline-md text-lg">Inspección en Planta</h3>
+      </div>
+    </div>
+    <div>
+      <h3 class="font-headline-md text-orange-500 mb-3">Auditorías de Seguridad</h3>
+      <p class="font-body-md text-slate-300 leading-relaxed">Acompañe a nuestros expertos durante una inspección técnica en instalaciones de alta complejidad. Mostraremos el protocolo paso a paso para la identificación de riesgos y evaluación de estructuras críticas, garantizando ambientes seguros.</p>
+    </div>
+  </div>
+
+  <!-- Video 2 (Row 2) -->
+  <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+    <div class="order-2 md:order-1">
+      <h3 class="font-headline-md text-orange-500 mb-3">Capacitación y Simulacros</h3>
+      <p class="font-body-md text-slate-300 leading-relaxed">Observe cómo preparamos a las brigadas de emergencia industriales. Desde el uso correcto de Equipos de Protección Personal (EPP) hasta protocolos de evacuación y manejo de crisis en tiempo real, bajo estándares internacionales.</p>
+    </div>
+    <div class="order-1 md:order-2 relative bg-slate-800 rounded-xl overflow-hidden aspect-video shadow-2xl border border-slate-700 group cursor-pointer w-full">
+      <img class="w-full h-full object-cover opacity-60 group-hover:opacity-40 transition-opacity duration-500" data-alt="Training simulation for industrial safety" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBd-iUt7VzgnrbyUu5601WZ5iKJHI81tPjBLrtxgFYhNvM4-trNsDEuPR1ppoa5as1rZmAhPYFVQ3Lk6gpyFlSnPahrue3uXVdWmAfO1-lKCLe1mDO5uFBstxkCyqVbcKXj-wwnqSN-FHhDh7O7p-NsDchb2VA-WLDWcEAe4qOQYOIFh_3Qqu4lB4TeGWvKypDe6oHoqNZPr8xyTUU7FQok1BeeUjCw9bawik5h-uXHJQxhkxHhnUqP-Utj5Wz1GunnKR_VDNDNtKG4" />
+      <div class="absolute inset-0 flex items-center justify-center">
+        <div class="w-16 h-16 bg-secondary-container hover:bg-orange-500 text-white rounded-full flex items-center justify-center transition-transform transform group-hover:scale-110 shadow-[0_0_30px_rgba(252,119,40,0.5)]">
+          <span class="material-symbols-outlined text-3xl" data-icon="play_arrow">play_arrow</span>
+        </div>
+      </div>
+      <div class="absolute bottom-4 left-4 right-4">
+        <p class="font-label-md text-xs uppercase tracking-widest text-slate-300 mb-1">Próximamente</p>
+        <h3 class="font-headline-md text-lg">Entrenamiento Práctico</h3>
+      </div>
+    </div>
+  </div>
+
+  <!-- Video 3 (Row 3, Larger) -->
+  <div class="grid grid-cols-1 xl:grid-cols-3 gap-8 items-center bg-slate-900 p-6 md:p-8 rounded-2xl border border-slate-800 shadow-xl mt-4">
+    <div class="xl:col-span-2 relative bg-slate-800 rounded-xl overflow-hidden aspect-video shadow-2xl border border-slate-700 group cursor-pointer w-full">
+      <img class="w-full h-full object-cover opacity-60 group-hover:opacity-40 transition-opacity duration-500" data-alt="Corporate overview of Vishua SpA operations" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBQQhmpwAyzW02Rc-1CQQw2bPbIEsJBRj0tB8rDMpRNIZ4JDBXDLxtYUBfCcGklWeCHoTTxyDVNFXVHIWj0LkFPkXshrGGjnBvrKOoe0WLps-0Gtv-UGxPPCSBJc3DrtrhTnWmmm1qYt3ZdWZRzg6Diq06wtCvoLXIb7_qQhg065PkrYhIP7Eql2eReGFKb3OgmjDbaxOD1fVyeWRNM-t0sFvjKtYqyJgikWay3lNSIASbwIzlyPFJ_FaNs33obJ226bnb5Iii1ibt4" />
+      <div class="absolute inset-0 flex items-center justify-center">
+        <div class="w-20 h-20 bg-secondary-container hover:bg-orange-500 text-white rounded-full flex items-center justify-center transition-transform transform group-hover:scale-110 shadow-[0_0_30px_rgba(252,119,40,0.5)]">
+          <span class="material-symbols-outlined text-4xl" data-icon="play_arrow">play_arrow</span>
+        </div>
+      </div>
+      <div class="absolute bottom-6 left-6 right-6">
+        <p class="font-label-md uppercase tracking-widest text-slate-300 mb-2">Próximamente</p>
+        <h3 class="font-headline-md">Video Corporativo Oficial</h3>
+      </div>
+    </div>
+    <div class="xl:col-span-1">
+      <h3 class="font-headline-lg text-white mb-4">La Experiencia <span class="text-secondary-container">VISHUA SpA</span></h3>
+      <p class="font-body-md text-slate-300 mb-6 leading-relaxed">Un recorrido completo por nuestra historia, valores y la infraestructura que nos permite proteger a miles de trabajadores a lo largo del país. Conozca nuestra tecnología de punta y el compromiso inquebrantable con la excelencia operacional que nos destaca en el rubro industrial.</p>
+      <button class="w-full md:w-auto bg-transparent border border-secondary-container text-secondary-container hover:bg-secondary-container hover:text-white px-6 py-3 rounded font-label-md uppercase tracking-widest transition-all text-sm">
+          Suscribirse a Novedades
+      </button>
+    </div>
+  </div>
+
+</div>
+
+</div>
+</section>
+<!-- Clients Section -->
+<section class="py-lg border-y border-outline-variant bg-white">
+<div class="max-w-[1280px] mx-auto px-4 md:px-8">
+<p class="text-center font-label-md uppercase tracking-[0.2em] text-outline mb-10">Empresas que confían en nosotros</p>
+<div class="flex flex-wrap justify-center items-center gap-6 md:gap-xl opacity-60 grayscale hover:grayscale-0 transition-all">
+<span class="font-bold text-2xl text-slate-400">GeneralCable</span>
+<span class="font-bold text-2xl text-slate-400">Icanos</span>
+<span class="font-bold text-2xl text-slate-400">Teldor</span>
+<span class="font-bold text-2xl text-slate-400">Belden</span>
+<span class="font-bold text-2xl text-slate-400">Dekoron</span>
+</div>
+</div>
+</section>
+<!-- Blog Section -->
+<section class="py-xl bg-white">
+<div class="max-w-[1280px] mx-auto px-4 md:px-8">
+<div class="flex justify-between items-center mb-lg">
+<h2 class="font-headline-lg text-headline-lg uppercase">Novedades y Blog</h2>
+<a class="text-secondary font-bold uppercase text-xs tracking-widest border-b-2 border-secondary" href="novedades.html">Ver Todo</a>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-gutter">
+<article class="group">
+<div class="aspect-video overflow-hidden mb-6">
+<img class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" data-alt="Construction site workers attending a morning safety briefing with their supervisor" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA9ijVefWrrYZkTdtW8VCu-_rZ_Lv2DMw7uQmJ2C7Xuzbj0kZQxkfJ31Sy82-a5qt2xF6t3891SkDboWqZDnuUEDKYOlsgzmDrC5FpmWq3TqOPI0y2MceGMSYqh4stFGfwPHbG227M6nmgYMuOLwCUgF7zvEClZTDpDB4D1VCkch1eRuSKgCNWUQWNoWwrF093H-TG6rhL7J4dQX85oxX6VXyxb6I_rOqtlH1ruUpPXwU21eBxZvwBWavnm72w1UDza4vQZ61ZGdPjP"/>
+</div>
+<time class="text-xs text-secondary font-bold uppercase">15 Oct 2024</time>
+<h3 class="font-headline-md text-headline-md mt-2 mb-4 group-hover:text-secondary transition-colors">Nuevas normativas de seguridad minera en Chile</h3>
+<p class="font-caption text-on-surface-variant">Análisis detallado sobre las actualizaciones del decreto supremo N°132 y su impacto...</p>
+</article>
+<article class="group">
+<div class="aspect-video overflow-hidden mb-6">
+<img class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" data-alt="Professional fire drill training with employees practicing with fire extinguishers in a parking lot" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBd-iUt7VzgnrbyUu5601WZ5iKJHI81tPjBLrtxgFYhNvM4-trNsDEuPR1ppoa5as1rZmAhPYFVQ3Lk6gpyFlSnPahrue3uXVdWmAfO1-lKCLe1mDO5uFBstxkCyqVbcKXj-wwnqSN-FHhDh7O7p-NsDchb2VA-WLDWcEAe4qOQYOIFh_3Qqu4lB4TeGWvKypDe6oHoqNZPr8xyTUU7FQok1BeeUjCw9bawik5h-uXHJQxhkxHhnUqP-Utj5Wz1GunnKR_VDNDNtKG4"/>
+</div>
+<time class="text-xs text-secondary font-bold uppercase">08 Oct 2024</time>
+<h3 class="font-headline-md text-headline-md mt-2 mb-4 group-hover:text-secondary transition-colors">Importancia de los simulacros de incendio</h3>
+<p class="font-caption text-on-surface-variant">Cómo una práctica regular puede reducir significativamente los tiempos de evacuación...</p>
+</article>
+<article class="group">
+<div class="aspect-video overflow-hidden mb-6">
+<img class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" data-alt="Desk with safety audit paperwork, laptop, and safety helmet reflecting professional organization" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBKeXHgYdz-FuWcas9avJsuMwLDobhrdyTdxh-qEbCdusCf2XNtVoqd0AR5JDnUOQX-_HGw68YNnaX6czUc4jDONSnvEY3O3lvtn6qJ9p7UDKqGipUp8Z-8PzLGkdq_ngTpaSwQhBhy2WkBYxj97acMIXWs6yS5yyJgmrxTDzbws2AfRbxTMS_SecdA9cQ_Qmj4B-D0OA4QqHiZ1Nq285i0Q7NZfA1j2IfffuYPVLCFcMbHanEw-Z6gkIp9FZXr1VqZN-rTqghRUhrs"/>
+</div>
+<time class="text-xs text-secondary font-bold uppercase">22 Sep 2024</time>
+<h3 class="font-headline-md text-headline-md mt-2 mb-4 group-hover:text-secondary transition-colors">Guía para auditorías de seguridad interna</h3>
+<p class="font-caption text-on-surface-variant">Pasos fundamentales para realizar una autoevaluación efectiva de riesgos industriales...</p>
+</article>
+</div>
+</div>
+</section>
+<!-- Contact Section -->
+<section id="contacto" class="py-xl bg-primary-container relative">
+<div class="safety-grid-overlay absolute inset-0"></div>
+<div class="max-w-[1280px] mx-auto px-4 md:px-8 relative z-10">
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-xl">
+<div class="text-white">
+<h2 class="font-headline-lg text-headline-lg uppercase mb-6">Inicie su plan de prevención hoy</h2>
+<p class="font-body-lg text-slate-400 mb-10">Estamos listos para atender sus requerimientos en cualquier punto de Chile. Complete el formulario y un consultor senior se pondrá en contacto con usted.</p>
+<div class="space-y-6">
+<div class="flex items-start gap-4">
+<span class="material-symbols-outlined text-secondary">location_on</span>
+<div>
+<h4 class="font-bold text-white uppercase text-sm">Oficina Central Santiago</h4>
+<p class="text-slate-400 text-sm">Av. Las Condes 1234, Oficina 501, Las Condes.</p>
+</div>
+</div>
+<div class="flex items-start gap-4">
+<span class="material-symbols-outlined text-secondary">location_on</span>
+<div>
+<h4 class="font-bold text-white uppercase text-sm">Base Puerto Natales</h4>
+<p class="text-slate-400 text-sm">Calle Baquedano 450, Magallanes.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="bg-white p-lg rounded-sm shadow-xl">
+<form id="formIndexContacto" class="space-y-gutter">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-gutter">
+<div>
+<label class="block text-xs font-bold uppercase text-on-surface mb-2">Nombre Completo</label>
+<input id="formIndexNombre" class="w-full border-outline-variant focus:border-secondary focus:ring-secondary/20 rounded h-12 transition-colors" placeholder="Ej: Juan Pérez" type="text"/>
+<p id="errorIndexNombre" class="text-error text-xs mt-1 hidden font-semibold">Este campo es obligatorio</p>
+</div>
+<div>
+<label class="block text-xs font-bold uppercase text-on-surface mb-2">Empresa</label>
+<input id="formIndexEmpresa" class="w-full border-outline-variant focus:border-secondary focus:ring-secondary/20 rounded h-12 transition-colors" placeholder="Nombre de su compañía" type="text"/>
+<p id="errorIndexEmpresa" class="text-error text-xs mt-1 hidden font-semibold">Este campo es obligatorio</p>
+</div>
+</div>
+<div>
+<label class="block text-xs font-bold uppercase text-on-surface mb-2">Correo Electrónico</label>
+<input id="formIndexEmail" class="w-full border-outline-variant focus:border-secondary focus:ring-secondary/20 rounded h-12 transition-colors" placeholder="contacto@empresa.cl" type="email"/>
+<p id="errorIndexEmail" class="text-error text-xs mt-1 hidden font-semibold">Este campo es obligatorio</p>
+</div>
+<div>
+<label class="block text-xs font-bold uppercase text-on-surface mb-2">Servicio de Interés</label>
+<select id="formIndexServicio" class="w-full border-outline-variant focus:border-secondary focus:ring-secondary/20 rounded h-12 transition-colors">
+<option value="Asesoría Prevención de Riesgos Axeltom">Asesorías prevención de riesgo tubos de salvamento axeltom</option>
+<option value="Asesorías Limpieza">Asesorías limpieza</option>
+<option value="Desarrollo Pozo Profundo">Desarrollo pozo profundo</option>
+<option value="Asesorías en prevención de riesgo">Asesorías en prevención de riesgo</option>
+<option value="Asesor de Proyectos">Asesor de proyectos</option>
+<option value="Asesor Metal-Mecánico">Asesor empresa proyecto desarrollo metal-mecánico</option>
+<option value="Otro servicio">Otro servicio</option>
+</select>
+</div>
+<div>
+<label class="block text-xs font-bold uppercase text-on-surface mb-2">Mensaje</label>
+<textarea id="formIndexMensaje" class="w-full border-outline-variant focus:border-secondary focus:ring-secondary/20 rounded h-32 transition-colors" placeholder="Describa brevemente su requerimiento..."></textarea>
+<p id="errorIndexMensaje" class="text-error text-xs mt-1 hidden font-semibold">Este campo es obligatorio</p>
+</div>
+<button type="submit" class="w-full py-4 bg-secondary-container hover:bg-orange-600 text-white font-bold uppercase tracking-widest transition-all">Enviar Solicitud de Cotización</button>
+</form>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-slate-950 dark:bg-black w-full py-12 border-t border-slate-800 shadow-none">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-8 px-4 md:px-8 max-w-[1280px] mx-auto text-white">
+<div class="col-span-1 md:col-span-1">
+<div class="text-xl font-bold text-white mb-6">VISHUA SpA</div>
+<p class="font-['Inter'] text-sm leading-relaxed text-slate-400">Expertos en seguridad y salud ocupacional. Transformamos entornos industriales en espacios de trabajo seguros y productivos.</p>
+</div>
+<div>
+<h4 class="font-bold uppercase text-xs tracking-widest mb-6 text-orange-500">Navegación</h4>
+<ul class="space-y-4 font-['Inter'] text-sm text-slate-400">
+<li><a class="hover:text-white transition-colors" href="index.html">Inicio</a></li>
+<li><a class="hover:text-white transition-colors" href="servicios.html">Servicios</a></li>
+<li><a class="hover:text-white transition-colors" href="productos.html">Productos</a></li>
+<li><a class="hover:text-white transition-colors" href="contacto.html">Soporte</a></li>
+</ul>
+</div>
+<div>
+<h4 class="font-bold uppercase text-xs tracking-widest mb-6 text-orange-500">Legal</h4>
+<ul class="space-y-4 font-['Inter'] text-sm text-slate-400">
+<li><a class="hover:text-white transition-colors" href="#">Privacidad</a></li>
+<li><a class="hover:text-white transition-colors" href="#">Términos</a></li>
+<li><a class="hover:text-white transition-colors" href="#">Cookies</a></li>
+</ul>
+</div>
+<div>
+<h4 class="font-bold uppercase text-xs tracking-widest mb-6 text-orange-500">Redes Sociales</h4>
+<div class="flex gap-4">
+<a class="w-10 h-10 bg-slate-800 flex items-center justify-center hover:bg-orange-500 transition-colors" href="#">
+<span class="material-symbols-outlined text-sm">public</span>
+</a>
+<a class="w-10 h-10 bg-slate-800 flex items-center justify-center hover:bg-orange-500 transition-colors" href="#">
+<span class="material-symbols-outlined text-sm">group</span>
+</a>
+</div>
+</div>
+</div>
+<div class="max-w-[1280px] mx-auto px-4 md:px-8 mt-12 pt-8 border-t border-slate-900 text-center text-slate-500 text-xs">
+            © 2024 VISHUA SpA. Liderazgo en Seguridad Industrial.
+        </div>
+</footer>
+<!-- WhatsApp Button -->
+<div id="whatsapp-widget" class="fixed bottom-8 right-8 z-[100] flex flex-col items-end gap-2 transition-all duration-300">
+    <button onclick="document.getElementById('whatsapp-widget').style.display='none'" class="bg-white text-slate-500 hover:text-slate-800 rounded-full w-6 h-6 flex items-center justify-center shadow-md border border-slate-200" title="Cerrar">
+        <span class="material-symbols-outlined text-[14px]">close</span>
+    </button>
+    <a class="w-16 h-16 bg-[#25D366] text-white rounded-full flex items-center justify-center shadow-2xl transition-transform hover:scale-110 active:scale-95 group relative" href="https://wa.me/56912345678" target="_blank">
+        <svg class="w-8 h-8 fill-current" viewbox="0 0 24 24">
+            <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L0 24l6.335-1.662c1.72.94 3.659 1.437 5.63 1.438h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"></path>
+        </svg>
+        <div class="absolute right-20 bg-slate-900 text-white px-4 py-2 text-xs font-bold uppercase rounded-sm opacity-0 group-hover:opacity-100 transition-opacity whitespace-nowrap shadow-xl pointer-events-none">Hable con un experto</div>
+    </a>
+</div>
+
+</body></html><!DOCTYPE html>
+
+<html class="light scroll-smooth" style="scroll-padding-top: 150px;" lang="es"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>VISHUA SpA | Liderazgo en Seguridad Industrial</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+          darkMode: "class",
+          theme: {
+            extend: {
+              "colors": {
+                      "on-background": "#0d1d2a",
+                      "tertiary-fixed-dim": "#f9bd00",
+                      "inverse-primary": "#bac8dc",
+                      "surface-container-low": "#ecf4ff",
+                      "on-secondary-fixed-variant": "#7a3000",
+                      "on-error": "#ffffff",
+                      "surface": "#f7f9ff",
+                      "tertiary-container": "#251a00",
+                      "background": "#f7f9ff",
+                      "secondary-container": "#fc7728",
+                      "surface-variant": "#d4e4f6",
+                      "on-tertiary-container": "#a77d00",
+                      "surface-container-high": "#d9eafc",
+                      "on-secondary": "#ffffff",
+                      "secondary-fixed": "#ffdbcb",
+                      "surface-dim": "#cbdcee",
+                      "on-secondary-fixed": "#341000",
+                      "on-primary-fixed-variant": "#3a4859",
+                      "surface-tint": "#525f71",
+                      "primary-fixed": "#d6e4f9",
+                      "surface-container-lowest": "#ffffff",
+                      "surface-container-highest": "#d4e4f6",
+                      "on-tertiary-fixed-variant": "#5b4300",
+                      "on-error-container": "#93000a",
+                      "on-tertiary-fixed": "#251a00",
+                      "tertiary-fixed": "#ffdf9d",
+                      "tertiary": "#000000",
+                      "on-surface-variant": "#44474c",
+                      "outline-variant": "#c4c6cc",
+                      "surface-bright": "#f7f9ff",
+                      "on-surface": "#0d1d2a",
+                      "secondary": "#a04100",
+                      "on-primary-container": "#778598",
+                      "primary-fixed-dim": "#bac8dc",
+                      "on-primary": "#ffffff",
+                      "error": "#ba1a1a",
+                      "inverse-surface": "#223240",
+                      "primary-container": "#0f1c2c",
+                      "on-secondary-container": "#5d2300",
+                      "outline": "#74777d",
+                      "surface-container": "#e2efff",
+                      "inverse-on-surface": "#e7f2ff",
+                      "error-container": "#ffdad6",
+                      "primary": "#000000",
+                      "on-tertiary": "#ffffff",
+                      "on-primary-fixed": "#0f1c2c",
+                      "secondary-fixed-dim": "#ffb693"
+              },
+              "borderRadius": {
+                      "DEFAULT": "0.125rem",
+                      "lg": "0.25rem",
+                      "xl": "0.5rem",
+                      "full": "0.75rem"
+              },
+              "spacing": {
+                      "lg": "48px",
+                      "xl": "80px",
+                      "gutter": "24px",
+                      "container-max": "1280px",
+                      "sm": "12px",
+                      "md": "24px",
+                      "base": "8px",
+                      "xs": "4px"
+              },
+              "fontFamily": {
+                      "caption": ["Inter"],
+                      "headline-md": ["Inter"],
+                      "headline-lg": ["Inter"],
+                      "body-lg": ["Inter"],
+                      "label-md": ["Inter"],
+                      "headline-xl": ["Inter"],
+                      "body-md": ["Inter"]
+              },
+              "fontSize": {
+                      "caption": ["12px", {"lineHeight": "1.4", "fontWeight": "500"}],
+                      "headline-md": ["24px", {"lineHeight": "1.3", "fontWeight": "600"}],
+                      "headline-lg": ["32px", {"lineHeight": "1.2", "letterSpacing": "-0.01em", "fontWeight": "700"}],
+                      "body-lg": ["18px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                      "label-md": ["14px", {"lineHeight": "1.2", "letterSpacing": "0.05em", "fontWeight": "600"}],
+                      "headline-xl": ["48px", {"lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                      "body-md": ["16px", {"lineHeight": "1.6", "fontWeight": "400"}]
+              }
+            },
+          },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+            vertical-align: middle;
+        }
+        body { font-family: 'Inter', sans-serif; }
+        .safety-grid-overlay {
+            background-image: radial-gradient(#0d1d2a 0.5px, transparent 0.5px);
+            background-size: 24px 24px;
+            opacity: 0.05;
+        }
+    </style>
+</head>
+<body class="bg-background text-on-background selection:bg-secondary-container selection:text-white">
+<header class="fixed top-0 w-full z-[60] flex flex-col">
+<!-- TopAppBar -->
+<div class="bg-slate-900 dark:bg-slate-950 w-full border-b border-slate-800">
+<div class="flex flex-col md:flex-row justify-between items-center px-4 md:px-8 py-3 max-w-[1280px] mx-auto text-slate-300 font-['Inter'] text-xs font-medium gap-3 md:gap-0">
+<div class="flex items-center gap-4">
+<div class="flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">location_on</span>
+<span>Santiago | Puerto Natales</span>
+</div>
+</div>
+<div class="flex flex-wrap items-center justify-center gap-4 md:gap-6">
+<a class="flex items-center gap-1 hover:text-orange-400 transition-colors" href="tel:+56912345678">
+<span class="material-symbols-outlined text-[14px]">phone</span>
+<span>+56 9 1234 5678</span>
+</a>
+<a class="flex items-center gap-1 hover:text-orange-400 transition-colors" href="mailto:contacto@vishua.cl">
+<span class="material-symbols-outlined text-[14px]">mail</span>
+<span>contacto@vishua.cl</span>
+</a>
+</div>
+</div>
+</div>
+<!-- TopNavBar -->
+<nav class="bg-slate-950 dark:bg-black w-full shadow-md">
+<div class="flex justify-between items-center px-4 md:px-8 h-20 max-w-[1280px] mx-auto">
+<a href="index.html" class="flex items-center gap-2">
+<img src="logo.png" alt="VISHUA SpA Logo" class="h-12 object-contain" />
+</a>
+<div class="hidden md:flex items-center gap-8 font-['Inter'] text-sm font-semibold tracking-tight uppercase">
+<a class="text-orange-500 border-b-2 border-orange-500 pb-1" href="index.html">Inicio</a>
+<a class="text-slate-300 hover:text-white transition-colors" href="servicios.html">Servicios</a>
+<a class="text-slate-300 hover:text-white transition-colors" href="productos.html">Productos</a>
+<a class="text-slate-300 hover:text-white transition-colors" href="nosotros.html">Nosotros</a>
+</div>
 <button onclick="window.location.href='contacto.html'" class="bg-secondary-container hover:bg-orange-600 text-white px-6 py-2 rounded font-bold uppercase text-xs tracking-widest transition-all scale-95 active:scale-90">
                 Cotizar
             </button>
