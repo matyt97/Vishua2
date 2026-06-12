@@ -150,26 +150,27 @@
 <button onclick="window.location.href='contacto.html'" class="hidden md:inline-block bg-secondary-container hover:bg-orange-600 text-white px-6 py-2 rounded font-bold uppercase text-xs tracking-widest transition-all">
   Cotizar
 </button>
-<button id="menu-toggle" class="md:hidden flex flex-col justify-center items-center w-10 h-10 gap-1.5" onclick="document.getElementById('mobile-menu').classList.toggle('hidden')" aria-label="Abrir men�">
-  <span class="block w-6 h-0.5 bg-white transition-all"></span>
-  <span class="block w-6 h-0.5 bg-white transition-all"></span>
-  <span class="block w-6 h-0.5 bg-white transition-all"></span>
+<button id="menu-toggle" class="md:hidden flex flex-col justify-center items-center w-10 h-10 gap-1.5" onclick="document.getElementById('mobile-menu').classList.toggle('hidden')" aria-label="Abrir menu">
+  <span class="block w-6 h-0.5 bg-white"></span>
+  <span class="block w-6 h-0.5 bg-white"></span>
+  <span class="block w-6 h-0.5 bg-white"></span>
 </button>
 </div>
 </div>
 </nav>
 <!-- Mobile Menu -->
-<div id="mobile-menu" class="hidden md:hidden bg-slate-900 border-t border-slate-700 w-full z-50">
-  <div class="flex flex-col px-6 py-4 gap-4 font-['Inter'] text-sm font-semibold uppercase">
+<div id="mobile-menu" class="hidden md:hidden bg-slate-900 border-t border-slate-700 w-full z-[59] fixed top-[80px] left-0">
+  <div class="flex flex-col px-6 py-4 gap-1 font-['Inter'] text-sm font-semibold uppercase">
     <a class="text-slate-300 hover:text-white transition-colors py-2 border-b border-slate-800" href="index.html">Inicio</a>
     <a class="text-slate-300 hover:text-white transition-colors py-2 border-b border-slate-800" href="servicios.html">Servicios</a>
     <a class="text-orange-500 py-2 border-b border-slate-800" href="productos.html">Productos</a>
     <a class="text-slate-300 hover:text-white transition-colors py-2 border-b border-slate-800" href="nosotros.html">Nosotros</a>
-    <button onclick="window.location.href='contacto.html'" class="bg-secondary-container hover:bg-orange-600 text-white px-6 py-3 rounded font-bold uppercase text-xs tracking-widest transition-all mt-2">
+    <button onclick="window.location.href='contacto.html'" class="bg-secondary-container hover:bg-orange-600 text-white px-6 py-3 rounded font-bold uppercase text-xs tracking-widest transition-all mt-3 w-full">
       Cotizar
     </button>
   </div>
 </div>
+
 </header>
 <main class="pt-[120px] md:pt-[120px]">
 <!-- Hero Section -->
