@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+
+<html class="light" lang="es"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "secondary-container": "#fc7728",
+                        "on-tertiary": "#ffffff",
+                        "on-tertiary-container": "#a77d00",
+                        "error-container": "#ffdad6",
+                        "on-surface-variant": "#44474c",
+                        "surface-container-lowest": "#ffffff",
+                        "on-primary-container": "#778598",
+                        "surface-tint": "#525f71",
+                        "surface-dim": "#cbdcee",
+                        "surface": "#f7f9ff",
+                        "secondary-fixed": "#ffdbcb",
+                        "primary-container": "#0f1c2c",
+                        "on-secondary": "#ffffff",
+                        "on-primary-fixed": "#0f1c2c",
+                        "surface-container-highest": "#d4e4f6",
+                        "on-secondary-fixed": "#341000",
+                        "inverse-surface": "#223240",
+                        "tertiary-fixed": "#ffdf9d",
+                        "inverse-primary": "#bac8dc",
+                        "secondary-fixed-dim": "#ffb693",
+                        "primary-fixed": "#d6e4f9",
+                        "surface-container-low": "#ecf4ff",
+                        "on-secondary-container": "#5d2300",
+                        "on-tertiary-fixed": "#251a00",
+                        "on-surface": "#0d1d2a",
+                        "error": "#ba1a1a",
+                        "inverse-on-surface": "#e7f2ff",
+                        "outline-variant": "#c4c6cc",
+                        "on-error-container": "#93000a",
+                        "on-error": "#ffffff",
+                        "tertiary": "#000000",
+                        "on-tertiary-fixed-variant": "#5b4300",
+                        "outline": "#74777d",
+                        "surface-container": "#e2efff",
+                        "on-primary": "#ffffff",
+                        "background": "#f7f9ff",
+                        "secondary": "#a04100",
+                        "primary-fixed-dim": "#bac8dc",
+                        "tertiary-fixed-dim": "#f9bd00",
+                        "primary": "#000000",
+                        "on-background": "#0d1d2a",
+                        "surface-variant": "#d4e4f6",
+                        "surface-bright": "#f7f9ff",
+                        "surface-container-high": "#d9eafc",
+                        "on-primary-fixed-variant": "#3a4859",
+                        "tertiary-container": "#251a00",
+                        "on-secondary-fixed-variant": "#7a3000"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.125rem",
+                        "lg": "0.25rem",
+                        "xl": "0.5rem",
+                        "full": "0.75rem"
+                    },
+                    "spacing": {
+                        "md": "24px",
+                        "xs": "4px",
+                        "base": "8px",
+                        "xl": "80px",
+                        "gutter": "24px",
+                        "container-max": "1280px",
+                        "sm": "12px",
+                        "lg": "48px"
+                    },
+                    "fontFamily": {
+                        "caption": ["Inter"],
+                        "headline-xl": ["Inter"],
+                        "body-md": ["Inter"],
+                        "body-lg": ["Inter"],
+                        "headline-lg": ["Inter"],
+                        "headline-md": ["Inter"],
+                        "label-md": ["Inter"]
+                    },
+                    "fontSize": {
+                        "caption": ["12px", {"lineHeight": "1.4", "fontWeight": "500"}],
+                        "headline-xl": ["48px", {"lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                        "body-md": ["16px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                        "body-lg": ["18px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                        "headline-lg": ["32px", {"lineHeight": "1.2", "letterSpacing": "-0.01em", "fontWeight": "700"}],
+                        "headline-md": ["24px", {"lineHeight": "1.3", "fontWeight": "600"}],
+                        "label-md": ["14px", {"lineHeight": "1.2", "letterSpacing": "0.05em", "fontWeight": "600"}]
+                    }
+                },
+            },
+        }
+    </script>
+<style>
+        body { font-family: 'Inter', sans-serif; }
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+            display: inline-block;
+            vertical-align: middle;
+        }
+        .tonal-shift { background: linear-gradient(180deg, #0d1b2a 0%, #000000 100%); }
+    </style>
+</head>
+<body class="bg-background text-on-background">
+<header class="fixed top-0 w-full z-[60] flex flex-col">
+<header class="fixed top-0 w-full z-[60] flex flex-col">
+<header class="fixed top-0 w-full z-[60] flex flex-col">
+<header class="fixed top-0 w-full z-[60] flex flex-col">
+<header class="fixed top-0 w-full z-[60] flex flex-col">
+<!-- TopAppBar -->
+<div class="bg-slate-900 dark:bg-slate-950 w-full border-b border-slate-800">
+<div class="flex flex-col md:flex-row justify-between items-center px-4 md:px-8 py-3 max-w-[1280px] mx-auto text-slate-300 font-['Inter'] text-xs font-medium gap-3 md:gap-0">
+<div class="flex items-center gap-4">
+<div class="flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">location_on</span>
+<span>Santiago | Puerto Natales</span>
+</div>
+</div>
+<div class="flex flex-wrap items-center justify-center gap-4 md:gap-6">
+<a class="flex items-center gap-1 hover:text-orange-400 transition-colors" href="tel:+56912345678">
+<span class="material-symbols-outlined text-[14px]">phone</span>
+<span>+56 9 1234 5678</span>
+</a>
+<a class="flex items-center gap-1 hover:text-orange-400 transition-colors" href="mailto:contacto@vishua.cl">
+<span class="material-symbols-outlined text-[14px]">mail</span>
+<span>contacto@vishua.cl</span>
+</a>
+</div>
+</div>
+</div>
+<!-- TopNavBar -->
+<nav class="bg-slate-950 dark:bg-black w-full shadow-md">
+<div class="flex justify-between items-center px-4 md:px-8 h-20 max-w-[1280px] mx-auto">
+<a href="index.html" class="flex items-center gap-2">
+<img src="logo.png" alt="VISHUA SpA Logo" class="h-12 object-contain" />
+</a>
+<div class="hidden md:flex items-center gap-8 font-['Inter'] text-sm font-semibold tracking-tight uppercase">
+<a class="text-slate-300 hover:text-white transition-colors" href="index.html">Inicio</a>
+<a class="text-slate-300 hover:text-white transition-colors" href="servicios.html">Servicios</a>
+<a class="text-slate-300 hover:text-white transition-colors" href="productos.html">Productos</a>
+<a class="text-slate-300 hover:text-white transition-colors" href="nosotros.html">Nosotros</a>
+</div>
+<button onclick="window.location.href='contacto.html'" class="bg-secondary-container hover:bg-orange-600 text-white px-6 py-2 rounded font-bold uppercase text-xs tracking-widest transition-all scale-95 active:scale-90">
+                Cotizar
+            </button>
+</div>
+</nav>
+</header>
+</header>
+</header>
+</header>
+</header>
+<!-- Main Content Canvas -->
+<main class="pt-[160px] md:pt-[120px]">
+<div class="max-w-[1280px] mx-auto px-8">
+<!-- Hero Section for News -->
+<div class="mb-lg border-l-4 border-secondary-container pl-6 py-4">
+<h1 class="font-headline-xl text-headline-xl text-white mb-4">Novedades</h1>
+<p class="font-body-lg text-body-lg text-slate-400 max-w-2xl">
+                    Manténgase al día con las últimas tendencias en seguridad industrial, normativas EHS y las innovaciones tecnológicas de VISHUA SpA.
+                </p>
+</div>
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-gutter">
+<!-- News Grid (8 columns) -->
+<div class="lg:col-span-8 space-y-md">
+<!-- Featured Bento Grid Layout for News -->
+<div class="grid grid-cols-1 md:grid-cols-2 gap-md">
+<!-- Card 1 (Large) -->
+<div class="md:col-span-2 group relative overflow-hidden rounded-lg bg-slate-900 border border-slate-800 hover:border-slate-600 transition-all shadow-md">
+<div class="aspect-video w-full overflow-hidden">
+<img alt="Innovación Industrial" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 opacity-80" data-alt="Modern high-tech industrial facility at night with glowing blue lights and advanced robotics assembly line" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBc1aU4I-a5N3HY6FcXfwxT-Qu3MHt1aEg6l5eqo96nMYEkAUfWewQq5dam0OX5sgPyLcKe2pV3CuHORD3-W0F0jNMy88yqRwyiDe_LhKyLZtTezVO5VaK9DP9V1fMlycxHJuklZ_ilm1GtKmEYiDIad15drjYRI9qN48jZ7Qy02wTWg4PvTLjgx6YLbyQSoi_0Uj0rupPqYjeRGbg3-epp2ZbIoOeD1A1QHezydrpzDA8klj3g35Wh_xWOhr7cSihfMvi8AWELIqJ6"/>
+</div>
+<div class="p-8">
+<div class="flex items-center gap-4 mb-4">
+<span class="bg-secondary-container text-white px-3 py-1 rounded-full text-caption font-caption uppercase">Innovación</span>
+<span class="text-slate-500 font-caption text-caption">15 Oct, 2024</span>
+</div>
+<h2 class="font-headline-lg text-headline-lg text-white mb-4 group-hover:text-orange-400 transition-colors">Transformación Digital en la Seguridad Minera: El Futuro es Hoy</h2>
+<p class="font-body-md text-body-md text-slate-400 mb-6">Exploramos cómo la integración de IoT y sensores biométricos está revolucionando la prevención de riesgos en faenas críticas de alta montaña.</p>
+<button class="flex items-center gap-2 text-white font-label-md text-label-md uppercase border-b-2 border-secondary-container pb-1 hover:gap-4 transition-all">
+                                    Leer más <span class="material-symbols-outlined">arrow_forward</span>
+</button>
+</div>
+</div>
+<!-- Card 2 -->
+<div class="group bg-slate-900 border border-slate-800 rounded-lg overflow-hidden hover:shadow-xl transition-all">
+<div class="aspect-square w-full overflow-hidden">
+<img alt="Normativas EHS" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" data-alt="Close-up of industrial safety engineer reviewing blueprints on a digital tablet in a clean tech environment" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAN1o-7_k1cP3peFF9vcRFYEsPgbmkhv2q4Hfvq1nhtKH2IRBCgAJYQVnKV0j5LT1oMMNByA3tEYF8Kelj2fFFv4eDgzRQe_As-8WFgBsfSSxR1CZi_dsJiiUsbNaNqh7ulQkY7hKBCLy4UPJlQQarqerGIsJjwjw6RTppD1Bt5SiRC2moeL3WlmIAcOX5KqtlyY-sXHmhCCGdg7JV9cEPAuiDc79WacQ1LzolN7Z0-CeX648vlsKxeDU23NEYO_rldg6byMbC-eVXW"/>
+</div>
+<div class="p-6">
+<span class="text-slate-500 font-caption text-caption mb-2 block">10 Oct, 2024</span>
+<h3 class="font-headline-md text-headline-md text-white mb-3 group-hover:text-orange-400 transition-colors">Nuevas Normativas EHS 2024</h3>
+<p class="font-body-md text-body-md text-slate-400 mb-4 line-clamp-2">Guía completa sobre los ajustes en la regulación de protección auditiva para entornos industriales de alto impacto.</p>
+<button class="text-secondary-container font-label-md text-label-md hover:underline">LEER MÁS</button>
+</div>
+</div>
+<!-- Card 3 -->
+<div class="group bg-slate-900 border border-slate-800 rounded-lg overflow-hidden hover:shadow-xl transition-all">
+<div class="aspect-square w-full overflow-hidden">
+<img alt="Seguridad Operativa" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" data-alt="Industrial worker wearing high-visibility orange vest and protective helmet looking at a construction site" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCozBPnZ6R-z6Fy2U2XYJ2a2dG8ZkD1O2o_sVgDP-bQ7RQT9cbFSBE2zYg3xznu_y8JRHTpFe54amTY1VH_d_ZJNFoQpXLI-k9wm9CXKulRkW9xeEyBcoK-g2DZhE7mcrw1V9XIfqDQvF-Kj5XVizY7QIyJ5eS4REfHLD53Ej0XqHSTnuwO6ZazXvEygoPCPozG1IIT_DCwmtea_IpZMlDQNDtyHZn79ibbdXizoYTDHmkcDAmedaBkl3BL3P61R9hzXfHx9JWEFC5U"/>
+</div>
+<div class="p-6">
+<span class="text-slate-500 font-caption text-caption mb-2 block">05 Oct, 2024</span>
+<h3 class="font-headline-md text-headline-md text-white mb-3 group-hover:text-orange-400 transition-colors">Protocolos de Altura Geográfica</h3>
+<p class="font-body-md text-body-md text-slate-400 mb-4 line-clamp-2">Nuevos estándares técnicos para la implementación de sistemas de oxígeno y monitoreo en trabajadores expuestos.</p>
+<button class="text-secondary-container font-label-md text-label-md hover:underline">LEER MÁS</button>
+</div>
+</div>
+</div>
+<!-- Secondary News List -->
+<div class="space-y-4">
+<div class="flex flex-col md:flex-row gap-6 p-4 rounded-lg bg-slate-900/50 border border-slate-800 hover:bg-slate-900 transition-colors">
+<div class="w-full md:w-32 h-32 flex-shrink-0 rounded overflow-hidden">
+<img alt="Infraestructura" class="w-full h-full object-cover" data-alt="Abstract view of factory pipes and industrial infrastructure with a sharp industrial focus" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA9huEl93D7Mzp6HyEOAXsPj-oxc-XAiDX1-aNwLS0uGeiBU-gFyeIALE_pRGiowxTC6p-1W4K7xwaC2JMw1ruDtmpashr8QQxNcyKgSA5v8k1fn5bNZJHIur43ljj2t7ugM7ZO4aesH5F9vIHzy9-AjBK1BoXwPbCibi8Q8J4v_eUS7HridLfTPEqQ5bpnPflOVDBEEgIIbXRPopFxbxf_Qd1_ZBK7gv2U2rsi80g6m5utEpa2RlXmxSu-SwJYoRnJEBp8csSCzq_R"/>
+</div>
+<div class="flex-grow">
+<span class="text-orange-500 font-caption text-caption uppercase">Empresa</span>
+<h4 class="font-headline-md text-body-lg font-bold text-white mb-1">VISHUA SpA expande operaciones a Puerto Natales</h4>
+<p class="font-body-md text-body-md text-slate-400 line-clamp-1">Inauguramos nuevo centro logístico para atender la demanda industrial en la región de Magallanes.</p>
+<span class="text-slate-500 font-caption text-caption">01 Oct, 2024</span>
+</div>
+<div class="self-center">
+<button class="p-2 rounded-full border border-slate-700 text-slate-400 hover:text-white hover:border-white transition-all">
+<span class="material-symbols-outlined">chevron_right</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+<!-- Sidebar (4 columns) -->
+<aside class="lg:col-span-4 space-y-lg">
+<!-- LinkedIn Feed Simulation -->
+<div class="bg-slate-900 border border-slate-800 rounded-lg p-6">
+<div class="flex items-center justify-between mb-6">
+<h3 class="font-headline-md text-headline-md text-white flex items-center gap-2">
+<svg class="w-6 h-6 fill-current text-white" viewbox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"></path></svg>
+                                LinkedIn
+                            </h3>
+<span class="bg-blue-600 h-2 w-2 rounded-full animate-pulse"></span>
+</div>
+<div class="space-y-4">
+<div class="bg-slate-950 p-4 rounded border border-slate-800">
+<div class="flex gap-3 mb-2">
+<div class="w-8 h-8 rounded bg-white text-black font-black flex items-center justify-center text-[10px]">V</div>
+<div>
+<p class="text-white text-caption font-bold">VISHUA SpA</p>
+<p class="text-slate-500 text-[10px]">Hace 2 horas</p>
+</div>
+</div>
+<p class="text-slate-300 text-caption mb-3">Estamos orgullosos de anunciar nuestra participación en la próxima feria EXPOMIN 2024. ¡Visítanos en el stand A-42!</p>
+<div class="h-32 bg-slate-800 rounded mb-2 overflow-hidden">
+<img alt="LinkedIn post image" class="w-full h-full object-cover grayscale" data-alt="Large industrial convention hall with bright stage lighting and professional branding displays" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCeDNGsRm1uZXNGkizz3ZEP0hty40rLo1ZvdG3CKldom_8-e-WDXnJtokgmCk7OFrl4h6MLD8LOrRioYLCa1NvlPXz2e3PYmIFbLokk3sWZBnBOBqImnYDLOR5YmNGoyKon7p99Ddpzev7XRtTzCQ9i4Vhz776TZaxeh1EebTFuxx2tQrMovDcrd9UKdRtEbdXhBot_cSV6PD1TBKeUha8C9FGUlmzrkFOF4aVaHRhzUS4YNdrF9SgjWdyJgCfD4ApQZqC4hWESI49z"/>
+</div>
+</div>
+</div>
+</div>
+<!-- Instagram Feed Simulation -->
+<div class="bg-slate-900 border border-slate-800 rounded-lg p-6">
+<h3 class="font-headline-md text-headline-md text-white mb-6 flex items-center gap-2">
+<svg class="w-6 h-6 fill-current text-white" viewbox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"></path></svg>
+                            Instagram
+                        </h3>
+<div class="grid grid-cols-3 gap-2">
+<img alt="Insta 1" class="aspect-square object-cover rounded hover:opacity-75 cursor-pointer transition-opacity" data-alt="Industrial robot arm precision work close up macro" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA_eRJ5_dm4qC1p0JiYZsVvj2_epsYQ3wE859oSJwA20DR02kvONZPirHv53J9egHRc-GQgf0ZgA4wyIIiWVLUgUsdxWrRPY_gl2gdHPeY-X0NduYV3p9Gg7EUACuoTQflGVzXEc2B1vB1XwatOkHxctQCEbNE3KgIhkunq16318F-dxONyLCV_kPiFFc4PHjsK96nQJKJdftP-GNnHrfT_1soAxCyuS5t50XJNGVl1X_BfxWK_6lCcaR8tamS6nelepXTLh-PyiNkf"/>
+<img alt="Insta 2" class="aspect-square object-cover rounded hover:opacity-75 cursor-pointer transition-opacity" data-alt="High quality safety goggles sitting on a blueprint architectural layout" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBa2uN_6rY_WlBGCJVChXDxFvxMPqWgCTixk0EFP3KoB2QNuJhr8BhEA96nvT39mSpA0AvLyX9xN3-gGb5uDSl3FeGRgpBxvgIQNQmO4OGS8BdJ6VhfbrNkAC6YJ6ssB27BYXn57PpGlH9T2CNLu0SVjmU7_2YNB6N5vv9bPdnmE67D4EiGZXry8k8ETc0ApnwZ_8LF520TIoeVInBUtJUVmXGJH6e4U4mQ-sFh1iJrZbQJGJOnLMfRR3qO6H4x7_Z5DPoOlij5INgl"/>
+<img alt="Insta 3" class="aspect-square object-cover rounded hover:opacity-75 cursor-pointer transition-opacity" data-alt="Group of diverse engineers in a meeting room with glass walls" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDZ__tXDD6d9fQI0JhBS-p10dJBJ8yuRnUMfdZVEda3PV5qbd6Kr4z7CVrVT1hveugACfEqsSvbq33-Q6HMAuf4wUnzo26RlgGlmqmFZHqQiCXxZUADrgq3mSzWnlM9tqNest4rg5WBuUSJoodn9NRQYmAoTri87EvM_qOVHvtkO4DWFVa4XoZBUS04YfDsVujntrQH_TJ5TUA9l3QzQJAHCC1weGENSW2O8fYgaIf6bfEJ434re3xhcCtalFuv18C2fcKmxGd-Aco6"/>
+<img alt="Insta 4" class="aspect-square object-cover rounded hover:opacity-75 cursor-pointer transition-opacity" data-alt="Sunset over a large industrial refinery with silhouettes of towers" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAsOY7TV5xRxFt0KJcv3BwESfkh8ne4rVMkbUEuVuMrCSF4WhQCeGR_Xd7tjt9bFUSpjfDzKMZ8sH5v1C17-ZoI6i1g3lXin3f_w19B6-YvcNN6CV_nkk0eoqWr9gwltrWgzVw3UIa4X7BINgKubsQYkfrpUt6hXT80HsNKlslo0XElo2G2stbtWKav2hPmKLzrYt9fANeX8pthkg1Kd8cCKb-hKyt2KtYoA-l806IfumMgMSye9e2XSVu0rPsugSbhdNc7EuZfxEVK"/>
+<img alt="Insta 5" class="aspect-square object-cover rounded hover:opacity-75 cursor-pointer transition-opacity" data-alt="Electronic circuit board close up with soft bokeh industrial lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB2WuMN2-f2rHVMl6R_-IZD8oBeFiqbSCOieSNkaIwyRe9zlysCbuMZdU79jNMn4jkULC3CbU5_-YpIZPIVZBR_ebAGRl2St67pYzEwFp8x-VG_wX_3VgTYLjQdxNFK3hFTn6-VkLJI3Twt2tvWwEIrjhZifqkZA3Jqk2vvHqZkENw5CIRaodBYLWkfFWZQdHckoXflIGJuU95wFgH39y0BS6d00t8w9S3ipjFqSUPbQpIlNJuSZrnCAeqgsJzuR-zfV0btLWIwmQE0"/>
+<img alt="Insta 6" class="aspect-square object-cover rounded hover:opacity-75 cursor-pointer transition-opacity" data-alt="Industrial pipelines against a clear blue sky low angle view" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAr2zr9K1pxiohr_EjGlZZiakBqMI5IozNdOY8U-hW4rZqWSzUEZEZoPVkkUVI0E-BNGiwiCm9vKQy9nfo5GB1RyN4bgK9G-X434zUW1oOFpHJ3UfFrtAUedYm3MLfa7WRX1Qxlba1Yjcv0EksnSCrkXkWE8x-j86QZG93VgPc6gJ83UupstbJ7cE8VJ_k7YH6R0GwgTUOs752feHnIiApMPv5H9dg2hhp1hd0CLaATH9l97n5lTpfepaJT8NCQghz_GqKOMBePbFXm"/>
+</div>
+</div>
+<!-- Newsletter Sign up -->
+<div class="bg-secondary-container rounded-lg p-8 text-white">
+<h3 class="font-headline-md text-headline-md mb-4">Mantente Informado</h3>
+<p class="font-body-md text-body-md mb-6 opacity-90">Reciba mensualmente las actualizaciones críticas sobre normativas EHS en su correo.</p>
+<form class="space-y-3">
+<input class="w-full bg-white/20 border border-white/30 rounded px-4 py-3 text-white placeholder:text-white/60 focus:outline-none focus:ring-2 focus:ring-white" placeholder="Correo electrónico" type="email"/>
+<button class="w-full bg-white text-secondary-container font-label-md text-label-md py-3 rounded uppercase font-bold hover:bg-slate-100 transition-colors">Suscribirme</button>
+</form>
+</div>
+</aside>
+</div>
+<!-- Pagination -->
+<div class="mt-lg flex justify-center items-center gap-4">
+<button class="w-10 h-10 rounded border border-slate-700 text-slate-400 flex items-center justify-center hover:border-orange-500 hover:text-orange-500 transition-all">
+<span class="material-symbols-outlined">chevron_left</span>
+</button>
+<span class="bg-orange-500 text-white w-10 h-10 rounded flex items-center justify-center font-bold">1</span>
+<button class="w-10 h-10 rounded border border-slate-700 text-slate-400 flex items-center justify-center hover:border-orange-500 hover:text-orange-500 transition-all">2</button>
+<button class="w-10 h-10 rounded border border-slate-700 text-slate-400 flex items-center justify-center hover:border-orange-500 hover:text-orange-500 transition-all">3</button>
+<button class="w-10 h-10 rounded border border-slate-700 text-slate-400 flex items-center justify-center hover:border-orange-500 hover:text-orange-500 transition-all">
+<span class="material-symbols-outlined">chevron_right</span>
+</button>
+</div>
+</div>
+</main>
+<!-- Footer -->
+<footer class="bg-slate-950 dark:bg-black w-full py-12 border-t border-slate-800 shadow-none">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-8 px-4 md:px-8 max-w-[1280px] mx-auto text-white">
+<div class="col-span-1 md:col-span-1">
+<div class="text-xl font-bold text-white mb-6">VISHUA SpA</div>
+<p class="font-['Inter'] text-sm leading-relaxed text-slate-400">Expertos en seguridad y salud ocupacional. Transformamos entornos industriales en espacios de trabajo seguros y productivos.</p>
+</div>
+<div>
+<h4 class="font-bold uppercase text-xs tracking-widest mb-6 text-orange-500">Navegación</h4>
+<ul class="space-y-4 font-['Inter'] text-sm text-slate-400">
+<li><a class="hover:text-white transition-colors" href="index.html">Inicio</a></li>
+<li><a class="hover:text-white transition-colors" href="servicios.html">Servicios</a></li>
+<li><a class="hover:text-white transition-colors" href="productos.html">Productos</a></li>
+<li><a class="hover:text-white transition-colors" href="contacto.html">Soporte</a></li>
+</ul>
+</div>
+<div>
+<h4 class="font-bold uppercase text-xs tracking-widest mb-6 text-orange-500">Legal</h4>
+<ul class="space-y-4 font-['Inter'] text-sm text-slate-400">
+<li><a class="hover:text-white transition-colors" href="#">Privacidad</a></li>
+<li><a class="hover:text-white transition-colors" href="#">Términos</a></li>
+<li><a class="hover:text-white transition-colors" href="#">Cookies</a></li>
+</ul>
+</div>
+<div>
+<h4 class="font-bold uppercase text-xs tracking-widest mb-6 text-orange-500">Redes Sociales</h4>
+<div class="flex gap-4">
+<a class="w-10 h-10 bg-slate-800 flex items-center justify-center hover:bg-orange-500 transition-colors" href="#">
+<span class="material-symbols-outlined text-sm">public</span>
+</a>
+<a class="w-10 h-10 bg-slate-800 flex items-center justify-center hover:bg-orange-500 transition-colors" href="#">
+<span class="material-symbols-outlined text-sm">group</span>
+</a>
+</div>
+</div>
+</div>
+<div class="max-w-[1280px] mx-auto px-4 md:px-8 mt-12 pt-8 border-t border-slate-900 text-center text-slate-500 text-xs">
+            © 2024 VISHUA SpA. Liderazgo en Seguridad Industrial.
+        </div>
+</footer>
+<!-- WhatsApp Button -->
+<div id="whatsapp-widget" class="fixed bottom-8 right-8 z-[100] flex flex-col items-end gap-2 transition-all duration-300">
+    <button onclick="document.getElementById('whatsapp-widget').style.display='none'" class="bg-white text-slate-500 hover:text-slate-800 rounded-full w-6 h-6 flex items-center justify-center shadow-md border border-slate-200" title="Cerrar">
+        <span class="material-symbols-outlined text-[14px]">close</span>
+    </button>
+    <a class="w-16 h-16 bg-[#25D366] text-white rounded-full flex items-center justify-center shadow-2xl transition-transform hover:scale-110 active:scale-95 group relative" href="https://wa.me/56912345678" target="_blank">
+        <svg class="w-8 h-8 fill-current" viewbox="0 0 24 24">
+            <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L0 24l6.335-1.662c1.72.94 3.659 1.437 5.63 1.438h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"></path>
+        </svg>
+        <div class="absolute right-20 bg-slate-900 text-white px-4 py-2 text-xs font-bold uppercase rounded-sm opacity-0 group-hover:opacity-100 transition-opacity whitespace-nowrap shadow-xl pointer-events-none">Hable con un experto</div>
+    </a>
+</div>
+
+</body></html>

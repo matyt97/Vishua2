@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+
+<html class="light" lang="es"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "secondary-container": "#fc7728",
+                    "on-tertiary": "#ffffff",
+                    "on-tertiary-container": "#a77d00",
+                    "error-container": "#ffdad6",
+                    "on-surface-variant": "#44474c",
+                    "surface-container-lowest": "#ffffff",
+                    "on-primary-container": "#778598",
+                    "surface-tint": "#525f71",
+                    "surface-dim": "#cbdcee",
+                    "surface": "#f7f9ff",
+                    "secondary-fixed": "#ffdbcb",
+                    "primary-container": "#0f1c2c",
+                    "on-secondary": "#ffffff",
+                    "on-primary-fixed": "#0f1c2c",
+                    "surface-container-highest": "#d4e4f6",
+                    "on-secondary-fixed": "#341000",
+                    "inverse-surface": "#223240",
+                    "tertiary-fixed": "#ffdf9d",
+                    "inverse-primary": "#bac8dc",
+                    "secondary-fixed-dim": "#ffb693",
+                    "primary-fixed": "#d6e4f9",
+                    "surface-container-low": "#ecf4ff",
+                    "on-secondary-container": "#5d2300",
+                    "on-tertiary-fixed": "#251a00",
+                    "on-surface": "#0d1d2a",
+                    "error": "#ba1a1a",
+                    "inverse-on-surface": "#e7f2ff",
+                    "outline-variant": "#c4c6cc",
+                    "on-error-container": "#93000a",
+                    "on-error": "#ffffff",
+                    "tertiary": "#000000",
+                    "on-tertiary-fixed-variant": "#5b4300",
+                    "outline": "#74777d",
+                    "surface-container": "#e2efff",
+                    "on-primary": "#ffffff",
+                    "background": "#f7f9ff",
+                    "secondary": "#a04100",
+                    "primary-fixed-dim": "#bac8dc",
+                    "tertiary-fixed-dim": "#f9bd00",
+                    "primary": "#000000",
+                    "on-background": "#0d1d2a",
+                    "surface-variant": "#d4e4f6",
+                    "surface-bright": "#f7f9ff",
+                    "surface-container-high": "#d9eafc",
+                    "on-primary-fixed-variant": "#3a4859",
+                    "tertiary-container": "#251a00",
+                    "on-secondary-fixed-variant": "#7a3000"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.125rem",
+                    "lg": "0.25rem",
+                    "xl": "0.5rem",
+                    "full": "0.75rem"
+            },
+            "spacing": {
+                    "md": "24px",
+                    "xs": "4px",
+                    "base": "8px",
+                    "xl": "80px",
+                    "gutter": "24px",
+                    "container-max": "1280px",
+                    "sm": "12px",
+                    "lg": "48px"
+            },
+            "fontFamily": {
+                    "caption": ["Inter"],
+                    "headline-xl": ["Inter"],
+                    "body-md": ["Inter"],
+                    "body-lg": ["Inter"],
+                    "headline-lg": ["Inter"],
+                    "headline-md": ["Inter"],
+                    "label-md": ["Inter"]
+            },
+            "fontSize": {
+                    "caption": ["12px", {"lineHeight": "1.4", "fontWeight": "500"}],
+                    "headline-xl": ["48px", {"lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                    "body-md": ["16px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                    "body-lg": ["18px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                    "headline-lg": ["32px", {"lineHeight": "1.2", "letterSpacing": "-0.01em", "fontWeight": "700"}],
+                    "headline-md": ["24px", {"lineHeight": "1.3", "fontWeight": "600"}],
+                    "label-md": ["14px", {"lineHeight": "1.2", "letterSpacing": "0.05em", "fontWeight": "600"}]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        body { font-family: 'Inter', sans-serif; background-color: #f7f9ff; color: #0d1d2a; }
+        .safety-grid { background-size: 32px 32px; background-image: radial-gradient(circle, #d4e4f6 1px, transparent 1px); }
+    </style>
+</head>
+<body class="bg-background text-on-surface">
+<header class="fixed top-0 w-full z-[60] flex flex-col">
+<header class="fixed top-0 w-full z-[60] flex flex-col">
+<header class="fixed top-0 w-full z-[60] flex flex-col">
+<header class="fixed top-0 w-full z-[60] flex flex-col">
+<header class="fixed top-0 w-full z-[60] flex flex-col">
+<!-- TopAppBar -->
+<div class="bg-slate-900 dark:bg-slate-950 w-full border-b border-slate-800">
+<div class="flex flex-col md:flex-row justify-between items-center px-4 md:px-8 py-3 max-w-[1280px] mx-auto text-slate-300 font-['Inter'] text-xs font-medium gap-3 md:gap-0">
+<div class="flex items-center gap-4">
+<div class="flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">location_on</span>
+<span>Santiago | Puerto Natales</span>
+</div>
+</div>
+<div class="flex flex-wrap items-center justify-center gap-4 md:gap-6">
+<a class="flex items-center gap-1 hover:text-orange-400 transition-colors" href="tel:+56912345678">
+<span class="material-symbols-outlined text-[14px]">phone</span>
+<span>+56 9 1234 5678</span>
+</a>
+<a class="flex items-center gap-1 hover:text-orange-400 transition-colors" href="mailto:contacto@vishua.cl">
+<span class="material-symbols-outlined text-[14px]">mail</span>
+<span>contacto@vishua.cl</span>
+</a>
+</div>
+</div>
+</div>
+<!-- TopNavBar -->
+<nav class="bg-slate-950 dark:bg-black w-full shadow-md">
+<div class="flex justify-between items-center px-4 md:px-8 h-20 max-w-[1280px] mx-auto">
+<a href="index.html" class="flex items-center gap-2">
+<img src="logo.png" alt="VISHUA SpA Logo" class="h-12 object-contain" />
+</a>
+<div class="hidden md:flex items-center gap-8 font-['Inter'] text-sm font-semibold tracking-tight uppercase">
+<a class="text-slate-300 hover:text-white transition-colors" href="index.html">Inicio</a>
+<a class="text-slate-300 hover:text-white transition-colors" href="servicios.html">Servicios</a>
+<a class="text-slate-300 hover:text-white transition-colors" href="productos.html">Productos</a>
+<a class="text-slate-300 hover:text-white transition-colors" href="nosotros.html">Nosotros</a>
+</div>
+<button onclick="window.location.href='contacto.html'" class="bg-secondary-container hover:bg-orange-600 text-white px-6 py-2 rounded font-bold uppercase text-xs tracking-widest transition-all scale-95 active:scale-90">
+                Cotizar
+            </button>
+</div>
+</nav>
+</header>
+</header>
+</header>
+</header>
+</header>
+<main class="pt-[160px] md:pt-[120px]">
+<!-- Hero Impactante -->
+<section class="relative h-[600px] overflow-hidden flex items-center bg-primary-container">
+<img class="absolute inset-0 w-full h-full object-cover opacity-50 grayscale hover:grayscale-0 transition-all duration-700" data-alt="Modern industrial facility with a high-performance external metal escape chute under dramatic sunlight with high contrast shadows" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA3ByAQEhwo1V1cn7dbuuo7JUx75fuFCPqJrXiE1fd7IhGUbiKwLoq710lxwcsPPUAcPljLQaaIRtqM-v_nkGcnRK3bJKeLf1Hhxwl32mJh5NFBuVyaLJWTA-UrQyA5NI0Z2y5Xiq7duA1z8He0osd1F7WYm_CH59eAWpc4MTuyKWDWufv9dNVNud61eWxxtqzpSZLSO3A2mwTRD3mPyr93Vln4wyFJoWDGrHBF7BtIqbC3JbHg7_j-84fii27NV5cskYJLNmtE2YZT"/>
+<div class="absolute inset-0 bg-gradient-to-r from-primary-container to-transparent opacity-80"></div>
+<div class="relative z-10 max-w-[1280px] mx-auto px-8 w-full">
+<nav class="mb-8 flex items-center gap-2 text-slate-400 font-label-md text-label-md">
+<a class="hover:text-white transition-colors flex items-center" href="productos.html">
+<span class="material-symbols-outlined text-[18px] mr-1">arrow_back</span>
+                        Productos
+                    </a>
+<span>/</span>
+<span class="text-orange-500">Tobogán Axel Thoms</span>
+</nav>
+<div class="max-w-3xl">
+<span class="bg-secondary-container text-white px-4 py-1 text-caption font-caption mb-4 inline-block tracking-widest uppercase">
+                        Sistemas de Evacuación
+                    </span>
+<h1 class="text-headline-xl font-headline-xl text-white mb-6">
+                        EN ALTURAS AMENAZADAS, EL TOBOGÁN ES TU SALVAVIDAS
+                    </h1>
+<p class="text-body-lg font-body-lg text-slate-300 mb-10 max-w-xl">
+                        Ingeniería alemana de vanguardia para la evacuación masiva de edificios industriales y torres de control. Seguridad absoluta en situaciones críticas.
+                    </p>
+<div class="flex gap-4">
+<button class="bg-white text-primary px-8 py-4 rounded-lg font-bold uppercase text-sm hover:bg-slate-100 transition-all shadow-lg flex items-center gap-2">
+<span class="material-symbols-outlined">description</span>
+                            Ficha Técnica
+                        </button>
+<button class="border-2 border-white text-white px-8 py-4 rounded-lg font-bold uppercase text-sm hover:bg-white/10 transition-all">
+                            Ver Video
+                        </button>
+</div>
+</div>
+</div>
+</section>
+<!-- Sección DISEÑO -->
+<section class="py-lg bg-surface relative safety-grid">
+<div class="max-w-[1280px] mx-auto px-8">
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-lg items-center">
+<div>
+<h2 class="text-headline-lg font-headline-lg text-on-surface mb-6">
+                            DISEÑO: Evacuación vertical con deslizamiento helicoidal
+                        </h2>
+<p class="text-body-md font-body-md text-on-surface-variant mb-8">
+                            Nuestra tecnología de escape axial permite un descenso controlado y seguro sin importar la altura del edificio. A diferencia de las escaleras de emergencia convencionales, el tobogán protege al usuario del calor radiante y el humo.
+                        </p>
+<div class="space-y-6">
+<div class="flex gap-4 items-start p-base bg-white border border-slate-200 rounded-xl shadow-sm">
+<div class="w-12 h-12 bg-primary-container text-white flex items-center justify-center rounded-lg flex-shrink-0">
+<span class="material-symbols-outlined">cyclone</span>
+</div>
+<div>
+<h4 class="font-bold text-primary">Flujo Continuo</h4>
+<p class="text-caption font-caption text-on-surface-variant">Permite la evacuación de hasta 15 personas por minuto por cada módulo instalado.</p>
+</div>
+</div>
+<div class="flex gap-4 items-start p-base bg-white border border-slate-200 rounded-xl shadow-sm">
+<div class="w-12 h-12 bg-primary-container text-white flex items-center justify-center rounded-lg flex-shrink-0">
+<span class="material-symbols-outlined">shield</span>
+</div>
+<div>
+<h4 class="font-bold text-primary">Protección Térmica</h4>
+<p class="text-caption font-caption text-on-surface-variant">Material ignífugo de triple capa certificado internacionalmente para resistir temperaturas extremas.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="relative">
+<div class="bg-white p-base border border-slate-200 shadow-2xl rounded-xl">
+<img class="w-full h-auto rounded-lg" data-alt="Technical illustration showing a cross-section of a helicoidal rescue chute structure with mechanical engineering annotations and diagrams" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDIvBhJgSEQ1RI_5w8Ux3yHsA3DYIyBy-L6lSqGuigBiM0jA5W9MK0df4p90sS3ovF9FAEiA6gookw_7YY1N8I2Pu0ltEF_8Vv96PC-qBmjD5RCMjQbA23RwagUfWZgQrRJTgTJTQiKwm1CnuKc2zUZppY1iSdI0D-0II0OZhAW6yfXO5iOg9dzAqb62JjfjYNZRASZVv06Z3cRXOUVvzeL28sxIJrsOKWBABoIxHW01uNBaAs9no8RcpLwsqOKgTOfQrea9e0PwNjq"/>
+</div>
+<div class="absolute -bottom-6 -right-6 bg-secondary-container p-6 text-white rounded-xl shadow-xl max-w-xs">
+<span class="text-headline-md font-headline-md block mb-1">98%</span>
+<p class="text-caption font-caption">Reducción del tiempo de evacuación comparado con sistemas tradicionales.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Detalles Técnicos y Ventajas -->
+<section class="py-lg bg-white">
+<div class="max-w-[1280px] mx-auto px-8">
+<div class="text-center mb-16">
+<h2 class="text-headline-lg font-headline-lg text-on-surface">Especificaciones de Seguridad</h2>
+<div class="w-20 h-1 bg-secondary-container mx-auto mt-4"></div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<!-- Card 1 -->
+<div class="p-8 border border-slate-200 rounded-xl hover:shadow-xl transition-all hover:border-slate-400 group">
+<span class="material-symbols-outlined text-orange-500 text-4xl mb-4 group-hover:scale-110 transition-transform">verified_user</span>
+<h3 class="text-headline-md font-headline-md mb-4">Certificación EN 1147</h3>
+<ul class="space-y-3 text-on-surface-variant text-body-md font-body-md">
+<li class="flex items-center gap-2">
+<span class="material-symbols-outlined text-green-600 text-sm">check_circle</span>
+                                Resistencia a la tracción &gt; 5000kg
+                            </li>
+<li class="flex items-center gap-2">
+<span class="material-symbols-outlined text-green-600 text-sm">check_circle</span>
+                                Compatible con personas de movilidad reducida
+                            </li>
+</ul>
+</div>
+<!-- Card 2 -->
+<div class="p-8 border border-slate-200 rounded-xl hover:shadow-xl transition-all hover:border-slate-400 group">
+<span class="material-symbols-outlined text-orange-500 text-4xl mb-4 group-hover:scale-110 transition-transform">settings_accessibility</span>
+<h3 class="text-headline-md font-headline-md mb-4">Ergonomía de Salida</h3>
+<ul class="space-y-3 text-on-surface-variant text-body-md font-body-md">
+<li class="flex items-center gap-2">
+<span class="material-symbols-outlined text-green-600 text-sm">check_circle</span>
+                                Amortiguación de llegada integrada
+                            </li>
+<li class="flex items-center gap-2">
+<span class="material-symbols-outlined text-green-600 text-sm">check_circle</span>
+                                Despliegue automático en &lt; 30 seg
+                            </li>
+</ul>
+</div>
+<!-- Card 3 -->
+<div class="p-8 border border-slate-200 rounded-xl hover:shadow-xl transition-all hover:border-slate-400 group">
+<span class="material-symbols-outlined text-orange-500 text-4xl mb-4 group-hover:scale-110 transition-transform">speed</span>
+<h3 class="text-headline-md font-headline-md mb-4">Capacidad de Carga</h3>
+<ul class="space-y-3 text-on-surface-variant text-body-md font-body-md">
+<li class="flex items-center gap-2">
+<span class="material-symbols-outlined text-green-600 text-sm">check_circle</span>
+                                Múltiples usuarios simultáneos
+                            </li>
+<li class="flex items-center gap-2">
+<span class="material-symbols-outlined text-green-600 text-sm">check_circle</span>
+                                Soporta hasta 150kg por individuo
+                            </li>
+</ul>
+</div>
+</div>
+<div class="mt-16 flex justify-center">
+<a class="flex items-center gap-2 text-primary font-bold hover:gap-4 transition-all" href="productos.html">
+<span class="material-symbols-outlined">arrow_back</span>
+                        VOLVER AL CATÁLOGO DE PRODUCTOS
+                    </a>
+</div>
+</div>
+</section>
+<!-- CTA Final -->
+<section class="py-lg bg-slate-950 text-white overflow-hidden relative">
+<div class="absolute inset-0 opacity-10 pointer-events-none safety-grid"></div>
+<div class="max-w-[1280px] mx-auto px-8 relative z-10 text-center">
+<h2 class="text-headline-xl font-headline-xl mb-8">¿Necesitas asegurar la evacuación de tu proyecto?</h2>
+<p class="text-body-lg font-body-lg text-slate-400 mb-12 max-w-2xl mx-auto">
+                    Nuestros expertos en ingeniería de seguridad industrial están listos para asesorarte en la implementación del sistema Axel Thoms en tus instalaciones.
+                </p>
+<a class="inline-block bg-secondary-container text-white px-12 py-5 rounded-lg text-headline-md font-headline-md hover:bg-orange-600 transition-all shadow-2xl" href="contacto.html">
+                    CONTÁCTANOS
+                </a>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-slate-950 dark:bg-black w-full py-12 border-t border-slate-800 shadow-none">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-8 px-4 md:px-8 max-w-[1280px] mx-auto text-white">
+<div class="col-span-1 md:col-span-1">
+<div class="text-xl font-bold text-white mb-6">VISHUA SpA</div>
+<p class="font-['Inter'] text-sm leading-relaxed text-slate-400">Expertos en seguridad y salud ocupacional. Transformamos entornos industriales en espacios de trabajo seguros y productivos.</p>
+</div>
+<div>
+<h4 class="font-bold uppercase text-xs tracking-widest mb-6 text-orange-500">Navegación</h4>
+<ul class="space-y-4 font-['Inter'] text-sm text-slate-400">
+<li><a class="hover:text-white transition-colors" href="index.html">Inicio</a></li>
+<li><a class="hover:text-white transition-colors" href="servicios.html">Servicios</a></li>
+<li><a class="hover:text-white transition-colors" href="productos.html">Productos</a></li>
+<li><a class="hover:text-white transition-colors" href="contacto.html">Soporte</a></li>
+</ul>
+</div>
+<div>
+<h4 class="font-bold uppercase text-xs tracking-widest mb-6 text-orange-500">Legal</h4>
+<ul class="space-y-4 font-['Inter'] text-sm text-slate-400">
+<li><a class="hover:text-white transition-colors" href="#">Privacidad</a></li>
+<li><a class="hover:text-white transition-colors" href="#">Términos</a></li>
+<li><a class="hover:text-white transition-colors" href="#">Cookies</a></li>
+</ul>
+</div>
+<div>
+<h4 class="font-bold uppercase text-xs tracking-widest mb-6 text-orange-500">Redes Sociales</h4>
+<div class="flex gap-4">
+<a class="w-10 h-10 bg-slate-800 flex items-center justify-center hover:bg-orange-500 transition-colors" href="#">
+<span class="material-symbols-outlined text-sm">public</span>
+</a>
+<a class="w-10 h-10 bg-slate-800 flex items-center justify-center hover:bg-orange-500 transition-colors" href="#">
+<span class="material-symbols-outlined text-sm">group</span>
+</a>
+</div>
+</div>
+</div>
+<div class="max-w-[1280px] mx-auto px-4 md:px-8 mt-12 pt-8 border-t border-slate-900 text-center text-slate-500 text-xs">
+            © 2024 VISHUA SpA. Liderazgo en Seguridad Industrial.
+        </div>
+</footer>
+<!-- WhatsApp Button -->
+<div id="whatsapp-widget" class="fixed bottom-8 right-8 z-[100] flex flex-col items-end gap-2 transition-all duration-300">
+    <button onclick="document.getElementById('whatsapp-widget').style.display='none'" class="bg-white text-slate-500 hover:text-slate-800 rounded-full w-6 h-6 flex items-center justify-center shadow-md border border-slate-200" title="Cerrar">
+        <span class="material-symbols-outlined text-[14px]">close</span>
+    </button>
+    <a class="w-16 h-16 bg-[#25D366] text-white rounded-full flex items-center justify-center shadow-2xl transition-transform hover:scale-110 active:scale-95 group relative" href="https://wa.me/56912345678" target="_blank">
+        <svg class="w-8 h-8 fill-current" viewbox="0 0 24 24">
+            <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L0 24l6.335-1.662c1.72.94 3.659 1.437 5.63 1.438h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"></path>
+        </svg>
+        <div class="absolute right-20 bg-slate-900 text-white px-4 py-2 text-xs font-bold uppercase rounded-sm opacity-0 group-hover:opacity-100 transition-opacity whitespace-nowrap shadow-xl pointer-events-none">Hable con un experto</div>
+    </a>
+</div>
+
+</body></html>
