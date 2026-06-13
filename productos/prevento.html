@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8" /><meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Prevento | Vishua SPA</title>
+<meta name="description" content="Software de gestión de riesgos y cumplimiento normativo para operaciones mineras e industriales." />
+<script src="https://cdn.tailwindcss.com"></script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet" />
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+<style>body{font-family:'Inter',sans-serif}.text-secondary{color:#f97316}.text-on-surface{color:#1e293b}.text-on-surface-variant{color:#475569}.font-headline-md{font-size:1.5rem;font-weight:600;line-height:1.3}.font-body-md{font-size:1rem;line-height:1.6}.font-label-md{font-size:.875rem;font-weight:600;letter-spacing:.05em}@media(max-width:767px){.font-headline-md{font-size:1.25rem}}</style>
+</head>
+<body class="bg-slate-50 text-slate-800">
+<header class="fixed top-0 w-full z-[60] flex flex-col">
+<!-- TopAppBar -->
+<div class="bg-slate-900 dark:bg-slate-950 w-full border-b border-slate-800">
+<div class="flex flex-col md:flex-row justify-between items-center px-4 md:px-8 py-3 max-w-[1280px] mx-auto text-slate-300 font-['Inter'] text-xs font-medium gap-3 md:gap-0">
+<div class="flex items-center gap-4">
+<div class="flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">location_on</span>
+<span>Santiago | Puerto Natales</span>
+</div>
+</div>
+<div class="flex flex-wrap items-center justify-center gap-4 md:gap-6">
+<a class="flex items-center gap-1 hover:text-orange-400 transition-colors" href="tel:+56912345678">
+<span class="material-symbols-outlined text-[14px]">phone</span>
+<span>+56 9 1234 5678</span>
+</a>
+<a class="flex items-center gap-1 hover:text-orange-400 transition-colors" href="mailto:contacto@vishua.cl">
+<span class="material-symbols-outlined text-[14px]">mail</span>
+<span>contacto@vishua.cl</span>
+</a>
+</div>
+</div>
+</div>
+<!-- TopNavBar -->
+<nav class="bg-slate-950 dark:bg-black w-full shadow-md">
+<div class="flex justify-between items-center px-4 md:px-8 h-20 max-w-[1280px] mx-auto">
+<a href="../index.html" class="flex items-center gap-2">
+<img src="logo.png" alt="VISHUA SpA Logo" class="h-12 object-contain" />
+</a>
+<div class="hidden md:flex items-center gap-8 font-['Inter'] text-sm font-semibold tracking-tight uppercase">
+<a class="text-slate-300 hover:text-white transition-colors" href="../index.html">Inicio</a>
+<a class="text-slate-300 hover:text-white transition-colors" href="../servicios.html">Servicios</a>
+<a class="text-orange-500 border-b-2 border-orange-500 pb-1" href="../productos.html">Productos</a>
+<a class="text-slate-300 hover:text-white transition-colors" href="../nosotros.html">Nosotros</a>
+</div>
+<div class="flex items-center gap-3">
+<button onclick="window.location.href='contacto.html'" class="hidden md:inline-block bg-secondary-container hover:bg-orange-600 text-white px-6 py-2 rounded font-bold uppercase text-xs tracking-widest transition-all">
+  Cotizar
+</button>
+<button id="menu-toggle" class="md:hidden flex flex-col justify-center items-center w-10 h-10 gap-1.5" onclick="document.getElementById('mobile-menu').classList.toggle('hidden')" aria-label="Abrir menu">
+  <span class="block w-6 h-0.5 bg-white"></span>
+  <span class="block w-6 h-0.5 bg-white"></span>
+  <span class="block w-6 h-0.5 bg-white"></span>
+</button>
+</div>
+</div>
+</nav>
+<!-- Mobile Menu -->
+<div id="mobile-menu" class="hidden md:hidden bg-slate-900 border-t border-slate-700 w-full z-[59] fixed top-[80px] left-0">
+  <div class="flex flex-col px-6 py-4 gap-1 font-['Inter'] text-sm font-semibold uppercase">
+    <a class="text-slate-300 hover:text-white transition-colors py-2 border-b border-slate-800" href="../index.html">Inicio</a>
+    <a class="text-slate-300 hover:text-white transition-colors py-2 border-b border-slate-800" href="../servicios.html">Servicios</a>
+    <a class="text-orange-500 py-2 border-b border-slate-800" href="../productos.html">Productos</a>
+    <a class="text-slate-300 hover:text-white transition-colors py-2 border-b border-slate-800" href="../nosotros.html">Nosotros</a>
+    <button onclick="window.location.href='contacto.html'" class="bg-secondary-container hover:bg-orange-600 text-white px-6 py-3 rounded font-bold uppercase text-xs tracking-widest transition-all mt-3 w-full">
+      Cotizar
+    </button>
+  </div>
+</div>
+
+</header>
+<main class="pt-[120px] md:pt-[160px] pb-16">
+<div class="bg-white border-b border-slate-200 py-3 px-4 md:px-8"><div class="max-w-[1280px] mx-auto"><nav class="flex items-center gap-2 text-sm text-slate-500"><a class="hover:text-orange-500 transition-colors" href="../index.html">Inicio</a><span class="material-symbols-outlined text-sm">chevron_right</span><a class="hover:text-orange-500 transition-colors" href="../productos.html">Productos</a><span class="material-symbols-outlined text-sm">chevron_right</span><span class="text-slate-800 font-medium">Prevento</span></nav></div></div>
+<section class="bg-slate-900 text-white py-12 md:py-20 px-4 md:px-8">
+<div class="max-w-[1280px] mx-auto">
+<div class="inline-flex items-center gap-2 bg-orange-500/10 border border-orange-500/30 rounded-full px-4 py-1.5 mb-6"><span class="text-orange-400 text-xs font-semibold uppercase tracking-wider">Prevención</span></div>
+<h1 class="text-3xl md:text-5xl font-bold text-white mb-4 leading-tight">Prevento</h1>
+<p class="text-slate-300 text-lg md:text-xl max-w-2xl">Software de gestión de riesgos y cumplimiento normativo para operaciones mineras e industriales.</p>
+<div class="mt-8 flex flex-wrap gap-4">
+<a href="../contacto.html" class="inline-flex items-center gap-2 bg-orange-500 hover:bg-orange-600 text-white font-semibold px-6 py-3 rounded transition-colors">Cotizar ahora <span class="material-symbols-outlined">arrow_forward</span></a>
+<a href="../productos.html" class="inline-flex items-center gap-2 border border-slate-600 hover:border-orange-400 text-slate-300 hover:text-orange-400 font-semibold px-6 py-3 rounded transition-colors">Ver todos los productos</a>
+</div>
+</div>
+</section>
+<section class="py-12 px-4 md:px-8">
+<div class="max-w-[1280px] mx-auto grid grid-cols-1 lg:grid-cols-3 gap-8">
+<div class="lg:col-span-2 space-y-8">
+<div class="bg-white border border-slate-200 rounded-lg p-6 md:p-8">
+<h2 class="text-2xl font-bold text-slate-900 mb-4 pb-3 border-b border-slate-200">Descripción del Producto</h2>
+<p class="text-slate-600 leading-relaxed">Prevento es una plataforma de software especializada en gestión de riesgos laborales y cumplimiento normativo diseñada específicamente para las exigencias de la industria minera e industrial. Permite a las empresas administrar de manera centralizada todos los aspectos de la seguridad y salud ocupacional, desde la identificación de peligros hasta el seguimiento de incidentes, facilitando el cumplimiento de la normativa chilena vigente y estándares internacionales.</p>
+</div>
+<div class="bg-white border border-slate-200 rounded-lg p-6 md:p-8">
+<h2 class="text-2xl font-bold text-slate-900 mb-6 pb-3 border-b border-slate-200">Características y Beneficios</h2>
+<ul class="space-y-4"><li class="flex items-start gap-3"><span class="material-symbols-outlined text-secondary mt-0.5 flex-shrink-0">check_circle</span><span class="font-body-md text-on-surface-variant">Gestión centralizada de todos los registros de seguridad y salud ocupacional</span></li>
+<li class="flex items-start gap-3"><span class="material-symbols-outlined text-secondary mt-0.5 flex-shrink-0">check_circle</span><span class="font-body-md text-on-surface-variant">Identificación, evaluación y control de peligros y riesgos laborales (matriz IPER)</span></li>
+<li class="flex items-start gap-3"><span class="material-symbols-outlined text-secondary mt-0.5 flex-shrink-0">check_circle</span><span class="font-body-md text-on-surface-variant">Seguimiento y análisis de incidentes, accidentes y casi-accidentes</span></li>
+<li class="flex items-start gap-3"><span class="material-symbols-outlined text-secondary mt-0.5 flex-shrink-0">check_circle</span><span class="font-body-md text-on-surface-variant">Generación automática de reportes para SERNAGEOMIN, ISP e Inspección del Trabajo</span></li>
+<li class="flex items-start gap-3"><span class="material-symbols-outlined text-secondary mt-0.5 flex-shrink-0">check_circle</span><span class="font-body-md text-on-surface-variant">Módulos de capacitación y seguimiento de competencias del personal</span></li>
+<li class="flex items-start gap-3"><span class="material-symbols-outlined text-secondary mt-0.5 flex-shrink-0">check_circle</span><span class="font-body-md text-on-surface-variant">Alertas automáticas de vencimiento de documentos y certificaciones</span></li>
+<li class="flex items-start gap-3"><span class="material-symbols-outlined text-secondary mt-0.5 flex-shrink-0">check_circle</span><span class="font-body-md text-on-surface-variant">Interfaz intuitiva accesible desde dispositivos móviles y desktop</span></li>
+<li class="flex items-start gap-3"><span class="material-symbols-outlined text-secondary mt-0.5 flex-shrink-0">check_circle</span><span class="font-body-md text-on-surface-variant">Adaptable a DS 132, Ley 16.744 y estándares ISO 45001</span></li></ul>
+</div>
+<div class="bg-white border border-slate-200 rounded-lg p-6 md:p-8">
+<h2 class="text-2xl font-bold text-slate-900 mb-6 pb-3 border-b border-slate-200">Sectores de Aplicación</h2>
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-3"><div class="bg-slate-50 border border-slate-200 rounded p-4 flex items-start gap-3"><span class="material-symbols-outlined text-secondary text-xl flex-shrink-0">arrow_right</span><span class="font-body-md text-on-surface-variant">Empresas mineras de gran, mediana y pequeña escala</span></div>
+<div class="bg-slate-50 border border-slate-200 rounded p-4 flex items-start gap-3"><span class="material-symbols-outlined text-secondary text-xl flex-shrink-0">arrow_right</span><span class="font-body-md text-on-surface-variant">Plantas industriales y manufactureras</span></div>
+<div class="bg-slate-50 border border-slate-200 rounded p-4 flex items-start gap-3"><span class="material-symbols-outlined text-secondary text-xl flex-shrink-0">arrow_right</span><span class="font-body-md text-on-surface-variant">Constructoras y empresas de proyectos</span></div>
+<div class="bg-slate-50 border border-slate-200 rounded p-4 flex items-start gap-3"><span class="material-symbols-outlined text-secondary text-xl flex-shrink-0">arrow_right</span><span class="font-body-md text-on-surface-variant">Empresas de servicios con alta dotación de personal</span></div>
+<div class="bg-slate-50 border border-slate-200 rounded p-4 flex items-start gap-3"><span class="material-symbols-outlined text-secondary text-xl flex-shrink-0">arrow_right</span><span class="font-body-md text-on-surface-variant">Contratistas y subcontratistas industriales</span></div>
+<div class="bg-slate-50 border border-slate-200 rounded p-4 flex items-start gap-3"><span class="material-symbols-outlined text-secondary text-xl flex-shrink-0">arrow_right</span><span class="font-body-md text-on-surface-variant">Cualquier empresa que requiera cumplimiento de Ley 16.744</span></div></div>
+</div>
+</div>
+<div class="space-y-6">
+<div class="bg-white border border-slate-200 rounded-lg p-6">
+<h2 class="text-lg font-bold text-slate-900 mb-4 pb-3 border-b border-slate-200">Especificaciones Técnicas</h2>
+<dl class="space-y-4"><div class="border-b border-slate-200 pb-3"><dt class="font-label-md text-on-surface-variant text-sm uppercase tracking-wide mb-1">Tipo</dt><dd class="font-body-md text-on-surface font-medium">Software SaaS / On-premise</dd></div>
+<div class="border-b border-slate-200 pb-3"><dt class="font-label-md text-on-surface-variant text-sm uppercase tracking-wide mb-1">Categoría</dt><dd class="font-body-md text-on-surface font-medium">Gestión de Riesgos</dd></div>
+<div class="border-b border-slate-200 pb-3"><dt class="font-label-md text-on-surface-variant text-sm uppercase tracking-wide mb-1">Normativas</dt><dd class="font-body-md text-on-surface font-medium">DS 132, Ley 16.744, ISO 45001</dd></div>
+<div class="border-b border-slate-200 pb-3"><dt class="font-label-md text-on-surface-variant text-sm uppercase tracking-wide mb-1">Acceso</dt><dd class="font-body-md text-on-surface font-medium">Web y móvil (responsive)</dd></div>
+<div class="border-b border-slate-200 pb-3"><dt class="font-label-md text-on-surface-variant text-sm uppercase tracking-wide mb-1">Idioma</dt><dd class="font-body-md text-on-surface font-medium">Español</dd></div>
+<div class="border-b border-slate-200 pb-3"><dt class="font-label-md text-on-surface-variant text-sm uppercase tracking-wide mb-1">Implementación</dt><dd class="font-body-md text-on-surface font-medium">A medida según empresa</dd></div>
+<div class="border-b border-slate-200 pb-3"><dt class="font-label-md text-on-surface-variant text-sm uppercase tracking-wide mb-1">Soporte</dt><dd class="font-body-md text-on-surface font-medium">Técnico incluido</dd></div></dl>
+</div>
+<div class="bg-slate-900 text-white rounded-lg p-6">
+<h3 class="text-lg font-bold mb-2">¿Necesita más información?</h3>
+<p class="text-slate-400 text-sm mb-4">Nuestros especialistas están disponibles para asesorarle.</p>
+<a href="../contacto.html" class="block text-center bg-orange-500 hover:bg-orange-600 text-white font-semibold px-5 py-3 rounded transition-colors mb-3">Solicitar cotización</a>
+<a href="tel:+56912345678" class="flex items-center justify-center gap-2 border border-slate-600 hover:border-orange-400 text-slate-300 hover:text-orange-400 text-sm font-medium px-5 py-2.5 rounded transition-colors"><span class="material-symbols-outlined text-sm">phone</span>+56 9 1234 5678</a>
+</div>
+<div class="bg-orange-50 border border-orange-200 rounded-lg p-5">
+<p class="text-xs font-semibold uppercase tracking-wider text-orange-600 mb-1">Categoría</p>
+<p class="font-bold text-slate-900">Prevención y Gestión de Riesgos</p>
+<a href="../productos.html" class="mt-3 inline-flex items-center gap-1 text-sm text-orange-600 hover:text-orange-700 font-medium">Ver productos relacionados <span class="material-symbols-outlined text-sm">arrow_forward</span></a>
+</div>
+</div>
+</div>
+</section>
+<section class="bg-orange-500 py-10 px-4 md:px-8">
+<div class="max-w-[1280px] mx-auto flex flex-col md:flex-row items-center justify-between gap-6 text-center md:text-left">
+<div><h2 class="text-2xl font-bold text-white">¿Listo para digitalizar su gestión de seguridad?</h2><p class="text-orange-100 mt-1">Contáctenos hoy para recibir una demostración personalizada sin compromiso.</p></div>
+<a href="../contacto.html" class="inline-flex items-center gap-2 bg-white text-orange-600 hover:bg-orange-50 font-bold px-8 py-3 rounded transition-colors flex-shrink-0">Contactar ahora <span class="material-symbols-outlined">arrow_forward</span></a>
+</div>
+</section>
+</main>
+<footer class="bg-slate-950 dark:bg-black w-full py-12 border-t border-slate-800 shadow-none">
+<div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8 px-4 md:px-8 max-w-[1280px] mx-auto text-white">
+<div class="col-span-1 md:col-span-1">
+<div class="text-xl font-bold text-white mb-6">VISHUA SpA</div>
+<p class="font-['Inter'] text-sm leading-relaxed text-slate-400">Expertos en seguridad y salud ocupacional. Transformamos entornos industriales en espacios de trabajo seguros y productivos.</p>
+</div>
+<div>
+<h4 class="font-bold uppercase text-xs tracking-widest mb-6 text-orange-500">Navegación</h4>
+<ul class="space-y-4 font-['Inter'] text-sm text-slate-400">
+<li><a class="hover:text-white transition-colors" href="../index.html">Inicio</a></li>
+<li><a class="hover:text-white transition-colors" href="../servicios.html">Servicios</a></li>
+<li><a class="hover:text-white transition-colors" href="../productos.html">Productos</a></li>
+<li><a class="hover:text-white transition-colors" href="../contacto.html">Soporte</a></li>
+</ul>
+</div>
+<div>
+<h4 class="font-bold uppercase text-xs tracking-widest mb-6 text-orange-500">Legal</h4>
+<ul class="space-y-4 font-['Inter'] text-sm text-slate-400">
+<li><a class="hover:text-white transition-colors" href="#">Privacidad</a></li>
+<li><a class="hover:text-white transition-colors" href="#">Términos</a></li>
+<li><a class="hover:text-white transition-colors" href="#">Cookies</a></li>
+</ul>
+</div>
+<div>
+<h4 class="font-bold uppercase text-xs tracking-widest mb-6 text-orange-500">Redes Sociales</h4>
+<div class="flex gap-4">
+<a class="w-10 h-10 bg-slate-800 flex items-center justify-center hover:bg-orange-500 transition-colors" href="#">
+<span class="material-symbols-outlined text-sm">public</span>
+</a>
+<a class="w-10 h-10 bg-slate-800 flex items-center justify-center hover:bg-orange-500 transition-colors" href="#">
+<span class="material-symbols-outlined text-sm">group</span>
+</a>
+</div>
+</div>
+</div>
+<div class="max-w-[1280px] mx-auto px-4 md:px-8 mt-12 pt-8 border-t border-slate-900 text-center text-slate-500 text-xs">
+            © 2024 VISHUA SpA. Liderazgo en Seguridad Industrial.
+        </div>
+</footer>
+</body>
+</html>
